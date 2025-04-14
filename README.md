@@ -1,1 +1,1 @@
-# atividade-heran-a-java
+# atividade-herança-java
