@@ -1,1 +1,25 @@
+package code.people;
+
+public class Aluno extends Pessoa {
+    private final int numeroMatricula;
+    private String universidade;
+    private String curso;
+
+    public Aluno(String nome, String sexo, String dataNascimento, String cidadeNatal, String cidadeReside,
+                 int numeroMatricula, String universidade, String curso) {
+        super(nome, sexo, dataNascimento, cidadeNatal, cidadeReside);
+        this.numeroMatricula = numeroMatricula;
+        this.universidade = universidade;
+        this.curso = curso;
+    }
+
+    // Getters
+    public int getNumeroMatricula() { return numeroMatricula; }
+    public String getUniversidade() { return universidade; }
+    public String getCurso() { return curso; }
+
+    // Setters
+    public void setUniversidade(String universidade) { this.universidade = universidade; }
+    public void setCurso(String curso) { this.curso = curso; }
+}
 
