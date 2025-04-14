@@ -1,1 +1,29 @@
+package code.people;
+
+public class Pessoa {
+    protected String nome;
+    protected final String sexo;
+    protected final String dataNascimento;
+    protected final String cidadeNatal;
+    protected String cidadeReside;
+
+    public Pessoa(String nome, String sexo, String dataNascimento, String cidadeNatal, String cidadeReside) {
+        this.nome = nome;
+        this.sexo = sexo;
+        this.dataNascimento = dataNascimento;
+        this.cidadeNatal = cidadeNatal;
+        this.cidadeReside = cidadeReside;
+    }
+
+    // Getters
+    public String getNome() { return nome; }
+    public String getSexo() { return sexo; }
+    public String getDataNascimento() { return dataNascimento; }
+    public String getCidadeNatal() { return cidadeNatal; }
+    public String getCidadeReside() { return cidadeReside; }
+
+    // Setters
+    public void setNome(String nome) { this.nome = nome; }
+    public void setCidadeReside(String cidadeReside) { this.cidadeReside = cidadeReside; }
+}
 
