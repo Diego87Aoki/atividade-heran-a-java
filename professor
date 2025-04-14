@@ -1,0 +1,28 @@
+package code.people;
+
+public class Professor extends Pessoa {
+    private String universidade;
+    private String departamento;
+    private int numeroDaSala;
+    private final String cpf;
+
+    public Professor(String nome, String sexo, String dataNascimento, String cidadeNatal, String cidadeReside,
+                     String universidade, String departamento, int numeroDaSala, String cpf) {
+        super(nome, sexo, dataNascimento, cidadeNatal, cidadeReside);
+        this.universidade = universidade;
+        this.departamento = departamento;
+        this.numeroDaSala = numeroDaSala;
+        this.cpf = cpf;
+    }
+
+    // Getters
+    public String getUniversidade() { return universidade; }
+    public String getDepartamento() { return departamento; }
+    public int getNumeroDaSala() { return numeroDaSala; }
+    public String getCpf() { return cpf; }
+
+    // Setters
+    public void setUniversidade(String universidade) { this.universidade = universidade; }
+    public void setDepartamento(String departamento) { this.departamento = departamento; }
+    public void setNumeroDaSala(int numeroDaSala) { this.numeroDaSala = numeroDaSala; }
+}
